@@ -1,0 +1,451 @@
+:root {
+    --peach: #f9c784;
+    --dark: #2f4f4f;
+    --cyan: #e0ffff;
+    --brown: #3e2723;
+    --green: #25d366;
+}
+* {
+    box-sizing: border-box;
+}
+html,body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+#nav-container {
+    background-color: var(--cyan);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+}
+.nav-flex label,#hamburger {
+    display: none;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    color: var(--dark);
+    padding: 0 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+nav ul li a:hover {
+    background-color: var(--peach);
+    color: var(--brown);
+    transition: all 0.3s;
+}
+.nav-brand h2 {
+    margin: 14px 0 0 16px;
+    color: var(--dark);
+}
+#hero-container {
+    background-image: url(../Image/1757595852588.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+}
+.text {
+    text-align: center;
+    color: var(--cyan);
+    font-size: 24px;
+}
+.button {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--green);
+    padding: 10px;
+    color: var(--cyan);
+    font-size: 16px;
+    border-radius: 10px;
+}
+.button:hover {
+    background-color: var(--dark);
+    color: var(--cyan);
+}
+main {
+    width: 80%;
+    margin: auto;
+}
+/* About */
+#About h1 {
+    color: var(--dark);
+    text-align: center;
+    margin-top: 80px;
+}
+#About .About-Deskripsi {
+    text-align: center;
+    color: var(--dark);
+}
+.About-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.About-image,.About-text {
+    width: 50%;
+    margin: 14px;
+}
+.About-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 300px;
+}
+.About-image img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+#services h1 {
+    height: 1px;color: var(--dark);
+    text-align: center;
+    margin-top: 80px;
+    font-size: 24px;
+}
+#services .services-deskripsi {
+    text-align: center;
+    color: var(--dark);
+    margin-top: 60px;
+}
+.services-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.services-items {
+    width: 25%;
+    text-align: center;
+    padding: 20px 10px;
+}
+.services-items .fas {
+    color: var(--peach);
+}
+
+/* Catalog */
+
+#catalog h1 {
+    color: var(--dark);
+    text-align: center;
+    margin-top: 80px;
+}
+#catalog .catalog-deskripsi {
+    text-align: center;
+    color: var(--dark);
+}
+.catalog-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+.catalog-items {
+    width: 25%;
+    text-align: center;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.catalog-items img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.catalog-items img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.catalog-items h3 {
+    font-size: 19px;
+    margin: 10px 0;
+    color: var(--dark);
+}
+.catalog-items p {
+    font-size: 14px;
+    color: var(--dark);
+}
+.price-chat-container {
+    border-bottom: 2px solid var(--peach);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 8px 8px8px ;
+}
+.price-harga span {
+   font-size: 14px;
+   font-weight: bold;
+   color: var(--dark);
+}
+.chat-button button {
+   background-color: var(--green);
+   color: var(--cyan);
+   border: none;
+   padding: 5px;
+   font-size: 12px;
+   cursor: pointer;
+   border-radius: 5px;
+}
+.chat-button button:hover {
+    background-color: var(--dark);
+    color: var(--cyan);
+}
+
+/* Portofolio */
+#portofolio h1 {
+    color: var(--dark);
+    text-align: center;
+    margin-top: 80px;
+}
+#portofolio .portofolio-deskripsi {
+    text-align: center;
+    color: var(--dark);
+}
+.portofolio-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px auto;
+}
+.portofolio-items {
+    width: 25%;
+    padding: 10px;
+    overflow: hidden;
+}
+.portofolio-items img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.portofolio-items img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Contact US */
+
+#contact h1 {
+    margin-top: 80px;
+    text-align: center;
+    color: var(--dark);
+}
+.contact-deskripsi {
+    text-align: center;
+    color: var(--dark);
+}
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 100%;
+}
+.map {
+    width: 60%;
+}
+.map h3 {
+    text-align: center;
+    color: var(--dark);
+}
+.map iframe {
+    border-radius: 10px;
+}
+.social-media {
+    width: 40px;
+    padding: 10px;
+    flex: 1;
+    flex: 0 0 200px;
+}
+.social-media h3 {
+    color: var(--dark);
+    text-align: flex-start;
+    display: flex;
+    gap: 30px;
+}
+.social-icon {
+    display: block;
+    text-decoration: none;
+    color: var(--cyan);
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--dark);
+    padding: 5px;
+    border-radius: 10px;
+}
+.facebook {
+    background-color: #3b5998;
+}
+.instagram {
+    background-color: #e4405f;
+}
+.tiktok {
+    background-color: #000000;
+}
+.WhatsApp {
+    background-color: #25d366;
+}
+.social-icon:hover {
+    opacity: 0.5;
+}
+
+/* Fotter */ 
+
+.footer-container {
+    margin-top: 60px;
+    color: var(--dark);
+    background-color: var(--cyan);
+    padding: 30px 5px;
+}
+.footer-container a {
+    text-decoration: none;
+    color: var(--dark);
+}
+.footer-container a:hover {
+    text-decoration: underline;
+}
+.footer-flex {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.footer-flex section {
+    width: 25%;
+    text-align: center;
+}
+.footer-flex section ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+footer h3 {
+    margin-top: 0;
+}
+.footer-copy-right {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.footer-copy-right a:hover {
+    text-decoration: none;
+}
+
+/* Versi Tablet */
+@media screen and (max-width: 768px) {
+    /* Tampilkan icon hamburger */
+    #nav-container .nav-flex label {
+        display: inline-block;
+        color: var(--dark);
+        font-style: normal;
+        font-size: 32px;
+        padding: 8px;
+    }
+    /* Susun ulang menu manjadi Vertikal */
+    #nav-container .nav-flex {
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    nav ul li a {
+        display: block;
+        color: var(--dark);
+        background-color: var(--cyan);
+        padding: 0 30px;
+        height: auto;
+    }
+    /* Pindahkan posisi brand kekanan, dan perkecil */
+    .nav-brand h2{
+        position: absolute;
+        right: 20px;
+    }
+    /* Untuk menampilkan atau menyembunyikan menu  */
+    #nav-container nav {
+        display: none;
+    }
+    /* Menampilkan menu ketika text garis 3 di klik */
+    #nav-container .nav-flex input:checked ~ nav {
+    display: flex;
+    } 
+    /* About */
+    .About-flex {
+    flex-direction: column;
+    }
+    .About-image, .About-text {
+    width: auto;
+    }
+    /* Services Our Fitur */
+    .services-items {
+        width: 50%;
+    }
+    /* Catalog */ 
+    .catalog-items {
+        width: 50%;
+    }
+    /* Portofolio */
+    .portofolio-items {
+        width: 30%;
+    }
+    /* Contact */ 
+    .contact-flex {
+        flex-direction: column;
+    }
+    .map,.social-media {
+        width: 100%;
+    }
+    /* Fotter */
+    .footer-flex section {
+        width: 48%;
+    } 
+}
+/* Smartphone */
+@media screen and (max-width:481px) {
+    /* Services */
+    .services-items {
+        width: 100%;
+    }
+    /* Catalog */ 
+    .catalog-items {
+        width: 100%;
+    }
+    .portofolio-items {
+        width: 100%;
+    }
+    /* Fotter */
+    .footer-flex section {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
